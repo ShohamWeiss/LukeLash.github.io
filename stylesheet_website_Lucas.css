@@ -1,0 +1,852 @@
+.coverPageBackground { /*Sets the background properties for the Cover page*/
+  background-image: url('school_image.jpg');
+  /*background-color: rgb(19 41 75);*/ /*Turn off the background-image and leave this color on as the same color as the bannerButtons, looks kinda cool.
+                                         But Foellinger looks cooler*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  /*background-size: cover;*/
+  box-sizing: border-box;
+}
+.resumePageBackground { /*Sets the background properties for the Resume page*/
+  background-image: linear-gradient(dodgerblue,coral);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  /*background-size: cover;*/
+  overflow: scroll;
+  box-sizing: border-box;
+}
+.completeCVPageBackground {  /*Sets the background properties for the Complete CV page*/
+  background-image: linear-gradient(rgba(30, 144, 255, .75),coral);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100 pt 300 pt;
+  /*background-size: cover;*/
+  box-sizing: border-box;
+}
+.contactMePageBackground{  /*Sets the background properties for the Contact page*/
+  background-image: linear-gradient(darkgray, darkgray);
+  background-image: url('bardeen.jpg');
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.pageBanner {  /*The navigation bar present on all the pages*/
+  overflow: hidden;
+  background-color: rgba(19 41 75);
+  border: 2px solid rgba(232 74 39);
+  font-family: "Tahoma", sans-serif;
+  color: white;
+
+}
+        .pageBanner a {  /*Properties for the individual buttons on the navigation bar*/
+        float: left;
+        text-align: center;
+        padding: 18px 20px;
+        font-size: 15px;
+        }
+
+        #downloadCV {  /*The button (which only shows up on the navigation bar on the Complete CV page) which allows the user to view pdf of my resume*/
+          float: right;
+          color: white;
+          background-color: rgba(19 41 75);
+        }
+                  #downloadCV:hover { /*Changes color of the pdf resume button when hovered*/
+                    background-color: rgba(232 74 39);
+                  }
+ #coverPageBannerButtonDiv {  /*Properties for only the Cover page button on the navigation bar*/
+  border:1px solid rgba(19 41 75);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  margin-left: 5%;
+  font-size: 12pt;
+  border: 1px dashed white;
+  border-right: 1px solid white;
+  vertical-align: middle;
+  flex-basis: 25%;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  box-sizing: border-box;
+}
+          #coverPageBannerButtonDiv:hover {
+            transition-duration: .4s;
+            background-color: rgba(232 74 39);
+            border: 2px solid white;
+            border-radius: 1px;
+            font-style: italic;
+            vertical-align: middle;
+          }
+#resumePageBannerButtonID {  /*Properties for only the Resume page button on the navigation bar*/
+
+  border:1px solid rgba(19 41 75);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12pt;
+  position: absolute;
+  padding: 5px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-sizing: border-box;
+}
+          #resumePageBannerButtonID:hover { /**/
+            transition-duration: .4s;
+            background-color: rgba(232 74 39);
+            border: 2px solid white;
+            border-radius: 1px;
+            font-style: italic;
+          }
+#completeCVPageBannerButtonID {  /*Properties for only the Complete CV page button on the navigation bar*/
+
+  border:1px solid rgba(19 41 75);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12pt;
+  padding: 5px;
+  position: absolute;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-sizing: border-box;
+}
+          #completeCVPageBannerButtonID:hover {
+            transition-duration: .4s;
+            background-color: rgba(232 74 39);
+            border: 2px solid white;
+            border-radius: 1px;
+            font-style: italic;
+          }
+#contactMePageBannerButtonID {   /*Properties for only the Contact page button on the navigation bar*/
+
+  border:1px solid rgba(19 41 75);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12pt;
+  position: absolute;
+  padding: 5px;
+  border-left: 1px solid white;
+  box-sizing: border-box;
+}
+          #contactMePageBannerButtonID:hover {
+            transition-duration: .4s;
+            background-color: rgba(232 74 39);
+            border: 2px solid white;
+            border-radius: 1px;
+            font-style: italic;
+          }
+        .buttonLinkStyling { /*Class for styling for all four MAIN banner buttons ("About Luke", "Resume", "Complete CV", and "Contact Luke") on the cover page*/
+                color: white;
+                box-sizing: border-box;
+                    }
+
+#coverPagePicContainer { /*For the aside box on the cover page containing the profile pic of me*/
+  background-color: rgba(232, 74, 39, 0.75); /*Sets div background to semi-transparent orange*/
+  background-image: linear-gradient(rgba(19, 41, 75), rgba(232, 74, 39, 0.25)); /*rgba(19, 41, 75*/
+  border: 2px solid pink;
+  width: 30%;
+  height: 75%;
+  position: fixed;
+  top: 13%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  box-sizing: border-box;
+}
+#coverPagePic {
+  width: 90%;
+  height: 82%;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+#coverPageBioDiv1 {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  position: absolute;
+  top: 26%;
+  left: 43%;
+  width: 53%;
+  height: 35%;
+  font-family: Verdana;
+  color: white;
+  font-size: 18pt;
+  box-sizing: border-box;
+}
+            #coverPageBioDiv2 {
+              display: flex;
+              justify-content: right;
+              align-items: right;
+              position: absolute;
+              top: 56.5%;
+              left: 43%;
+              width: 53%;
+              height: 10%;
+              font-family: Verdana;
+              color: white;
+              font-size: 18pt;
+              box-sizing: border-box;
+            }
+#footerContainer {
+  width: 99%;
+  text-align: center;
+  position: absolute;
+  bottom: 0.5%;
+  box-sizing: border-box;
+}
+#coverPageFooter {
+  display: inline-block;
+  margin: 0 auto;
+  bottom: 0.5%;
+  border-style: solid;
+  border-radius: 50px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 9pt;
+  border-color: rgba(19, 41, 75, 0.75);
+  background-color: rgba(19, 41, 75, 0.75);
+  box-sizing: border-box;
+}
+
+#comeBackLaterPleaseDiv {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 70%;
+  height: 20%;
+  border: 2px ;solid red;
+  font-family: sans-serif;
+  font-size: 25;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+#contactMeContainer {
+  position: absolute;
+  border: 2px ;solid black;
+  width: 80%;
+  height: 25%;
+  top: 15%;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing:
+}
+#emailContainer {
+  flex-basis: 30%;
+  }
+
+  #phoneContainer {
+    flex-basis: 30%;
+    }
+
+    #LinkedInContainer {
+      flex-basis: 30%;
+      }
+
+#emailContactButton {
+  /*background-image: linear-gradient(to bottom right, rgba(0, 191, 255), rgba(232, 74, 39, .6));*/
+  background-color: lightgray;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(19, 41, 75);
+  flex-basis: 33%;
+  font-size: 30;
+  color: black;
+  font-family: "Segoe UI";
+  }
+         #emailContactButton:hover {
+              background-image: linear-gradient(rgba(19, 41, 75), rgba(19, 41, 75));
+              border: 4px solid white;
+              padding: 14px;
+              font-size: 30px;
+              color: white;
+              text-align: center;
+              transform: scale(1.2, 1.2);
+              opacity: 1;
+              transition: all 0.4s;
+            }
+
+#phoneContactButton {
+  background-color: lightgray;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(19, 41, 75);
+  flex-basis: 33%;
+  font-size: 30;
+  color: black;
+  font-family: "Segoe UI";
+  }
+          #phoneContactButton:hover {
+              background-image: linear-gradient(rgba(19, 41, 75), rgba(19, 41, 75));
+              border: 4px solid white;
+              padding: 14px;
+              font-size: 30px;
+              text-align: center;
+              transform: scale(1.2, 1.2);
+              opacity: 1;
+              transition: all 0.4s;
+              color: white;
+              }
+
+#LinkedInContactButton {
+  background-color: lightgray;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(19, 41, 75);
+  flex-basis: 33%;
+  font-size: 30;
+  color: black;
+  font-family: "Segoe UI";
+  }
+          #LinkedInContactButton:hover {
+              background-image: linear-gradient(rgba(19, 41, 75), rgba(19, 41, 75));
+              background-image: linear-gradient(rgba(19, 41, 75), rgba(19, 41, 75));
+              border: 4px solid white;
+              padding: 14px;
+              font-size: 30px;
+              text-align: center;
+              transform: scale(1.2, 1.2);
+              opacity: 1;
+              cursor: pointer;
+              transition: all 0.4s;
+              color: white;
+              }
+
+#messageBox {
+  position: absolute;
+  width: 60%;
+  height: 35%;
+  bottom: 10%;
+  left: 20%;
+  background-color: white;
+  border: 6px dashed white;
+  font-family: "Segoe UI";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+}
+      #messageBoxLeftContainer {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+        float: left;
+        background-color: coral;
+      }
+
+      #messageBoxIntro {
+        position: relative;
+        flex-basis: 25%;
+        font-size: 16;
+        font-style: oblique;
+        text-align: center;
+        vertical-align: middle;
+      }
+      #messageBoxNameAndEmailAndMessageDiv {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 75%;
+        background-color: coral;
+      }
+              #messageBoxNameAndEmailDiv {
+                flex-basis: 35%;
+                display: flex;
+                flex-direction: column;
+                background-color: gold;
+              }
+                      #messageBoxNameDiv {
+                        flex-basis: 50%;
+                        background-color: coral;
+                        line-height: 1.6;
+                      }
+                                #nameInput {
+                                  width: 82%;
+                                  position: relative;
+                                  left: 9%;
+                                  border-radius: 7px;
+                                  background-color: white;
+                                  border-color: transparent;
+                                }
+                      #messageBoxEmailDiv {
+                        flex-basis: 50%;
+                        background-color: coral;
+                        line-height: 1.6;
+                      }
+                                #emailAddressInput {
+                                  width: 82%;
+                                  position: relative;
+                                  left: 9%;
+                                  border-radius: 7px;
+                                  background-color: white;
+                                  border-color: transparent;
+                                }
+              #messageBoxMessageDiv {
+                flex-basis: 65%;
+                background-color: coral;
+              }
+                        #messageInput {
+                          width: 89%;
+                          height: 77%;
+                          position: relative;
+                          left: 5.5%;
+                          top: 2.5%;
+                          border-radius: 7px;
+                          background-color: white;
+                          border-color: transparent;
+                        }
+#nameInDiv {
+  position: relative;
+  border: 1px dashed yellow;
+  }
+          #nameIn {
+            background-color: coral;
+            border-color: coral;
+            width: 50%;
+          }
+#emailAddressInDiv {
+  position: relative;
+  border: 1px dotted purple;
+}
+          #emailAddressIn {
+            background-color: coral;
+            border-color: coral;
+            width: 50%;
+          }
+#messageInDiv {
+  position: relative;
+  border: 1px dashed limegreen;
+}
+          #messageIn {
+            background-color: blue;
+            border-color: blue;
+            width: 50%;
+          }
+#submitButton {
+  flex-basis: 20%;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  color: white;
+  font-weight: bold;
+  font-size: 14pt;
+}
+          #submitButton:hover {
+            filter: brightness(.9);
+          }
+
+#allCompleteCVDiv {
+  position: absolute;
+  width: 70%;
+  height: 200%;
+  top: 15%;
+  left: 15%;
+  border: 2px ;solid white;
+  display: flex;
+  flex-direction: column;
+  white-space:;
+  box-sizing: border-box;
+}
+  #entry0Div { /*This is the first horizontal entry on the page. It is for UIUC*/
+    height: 20%;
+    border: 2px ;dashed green;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .75em;
+    padding-bottom: .75em;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+  }
+  #BachelorsLogo { /*This is the div containing the UIUC logo image*/
+    border: 2px; solid red;
+    display: flex;
+    flex-basis: 25%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+        #Bachelorsimg { /*The UIUC logo image itself*/
+          border: 1px solid rgb(221 221 221);; /*This line and the two after it give the logo the cool bubble border*/
+          padding: 5px;
+          border-radius: 50%;
+          width: 12em;
+          height: 12em;
+          box-sizing: border-box;
+        }
+                      .completeCVLogoHover:hover { /*Note: THIS SECTION APPLIES AS A CLASS TO ALL THE LOGO PICTURES ON THE COMPLETE CV PAGE*/
+                        opacity: .6;
+                        box-sizing: border-box;
+                }
+                      #Bachelorsimg:hover {
+                        border: 4px solid lightgray;
+                      }
+  #BachelorsText {
+    border: 2px ;solid black;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    font-family: "Tahoma";
+    color: white;
+    box-sizing: border-box;
+  }
+        #BachelorsTextTitle {
+          flex-basis: 15%;
+          border: 2px ;dashed yellow;
+          font-size: 30;
+          font-weight: bold;
+          box-sizing: border-box;
+        }
+        #BachelorsTextSubtitle {
+          flex-basis: 10%;
+          border: 2px; dashed yellow;
+          font-style: italic;
+          box-sizing: border-box;
+        }
+        #BachelorsTextBody {
+          flex-basis: 75%;
+          border: 2px ;dotted pink;
+          margin-top: 0em;
+          line-height: 1.6;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+        }
+            #BachelorsTextSkillsTitle {
+              flex-basis: 20%;
+              border: 2px; dotted black;
+              font-weight: bold;
+              box-sizing: border-box;
+            }
+            #BachelorsTextSkillsContainer {
+              flex-basis: 80%;
+              display: flex;
+              flex-direction: row;
+              border: 2px ;dotted purple;
+              box-sizing: border-box;
+            }
+                  #BachelorsTextSkills1 {
+                    flex-basis: 50%;
+                    border: 1px ;solid gold;
+                    box-sizing: border-box;
+                  }
+
+                  #BachelorsTextSkills2 {
+                    flex-basis: 50%;
+                    border: 1px; solid silver;
+                    box-sizing: border-box;
+                  }
+
+
+      #entry1Div { /*This is the first horizontal entry on the page. It is for CPChem*/
+        height: 20%;
+        border: 2px ;dashed green;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+      }
+            #CPCHEMLogo { /*This is the div containing the CPChem logo image*/
+              border: 2px ;solid red;
+              display: flex;
+              flex-basis: 25%;
+              align-items: center;
+              justify-content: center;
+              box-sizing: border-box;
+            }
+                  #CPCHEMimg { /*The CPChem logo image itself*/
+                    border: 1px solid rgb(221 221 221); /*This line and the two after it give the logo the cool bubble border*/
+                    padding: 5px;
+                    border-radius: 50%;
+                    width: 12em;
+                    height: 12em;
+                    box-sizing: border-box;
+                  }
+                            #CPCHEMimg:hover {
+                              border: 4px solid lightgray;
+                            }
+
+            #CPCHEMText {
+              border: 2px ;solid black;
+              display: flex;
+              flex-direction: column;
+              flex-basis: 75%;
+              font-family: "Tahoma";
+              color: white;
+              box-sizing: border-box;
+            }
+                  #CPCHEMTextTitle {
+                    flex-basis: 15%;
+                    border: 2px ;dashed yellow;
+                    font-size: 30;
+                    font-weight: bold;
+                    box-sizing: border-box;
+                  }
+                  #CPCHEMTextSubtitle {
+                    flex-basis: 10%;
+                    border: 2px ;dashed yellow;
+                    font-style: italic;
+                    box-sizing: border-box;
+                  }
+                  #CPCHEMTextBody {
+                    flex-basis: 75%;
+                    border: 2px ;dotted pink;
+                    margin-top: -1.5em;
+                    line-height: 1.6;
+                    box-sizing: border-box;
+                  }
+  #entry2Div { /*This is the first horizontal entry on the page. It is for CPChem*/
+    height: 20%;
+    border: 2px ;dashed green;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+                  }
+          #HousingLogo { /*This is the div containing the CPChem logo image*/
+            border: 2px ;solid red;
+            display: flex;
+            flex-basis: 25%;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+                        }
+              #Housingimg { /*The CPChem logo image itself*/
+                border: 1px solid rgb(221 221 221); /*This line and the two after it give the logo the cool bubble border*/
+                padding: 5px;
+                border-radius: 50%;
+                width: 12em;
+                height: 12em;
+                box-sizing: border-box;
+                    }
+                            #Housingimg:hover {
+                              border: 4px solid lightgray;
+                            }
+          #HousingText {
+            border: 2px ;solid black;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 75%;
+            font-family: "Tahoma";
+            color: white;
+            box-sizing: border-box;
+                        }
+          #HousingTextTitle {
+            flex-basis: 15%;
+            border: 2px ;dashed yellow;
+            font-size: 30;
+            font-weight: bold;
+            box-sizing: border-box;
+                              }
+          #HousingTextSubtitle {
+            flex-basis: 10%;
+            border: 2px ;dashed yellow;
+            font-style: italic;
+            box-sizing: border-box;
+                              }
+          #HousingTextBody {
+            flex-basis: 75%;
+            border: 2px ;dotted pink;
+            margin-top: -1.5em;
+            line-height: 1.6;
+            box-sizing: border-box;
+                              }
+    #entry3Div {
+      height: 20%;
+      border: 2px ;dashed green;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      margin-bottom: 1em;
+      box-sizing: border-box;
+    }
+
+      #IBCLogo {
+        border: 2px ;solid red;
+        display: flex;
+        flex-basis: 25%;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+          #IBCimg {
+            vertical-align: middle;
+            border: 1px solid rgb(221 221 221);
+            padding: 5px;
+            border-radius: 50%;
+            width: 12em;
+            height: 12em;
+            box-sizing: border-box;
+          }
+
+                        #IBCimg:hover {
+                          border: 4px solid lightgray;
+                        }
+
+    #IBCText {
+      border: 2px ;solid black;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 75%;
+      font-family: "Tahoma";
+      color: white;
+      box-sizing: border-box;
+
+    }
+          #IBCTextTitle {
+            flex-basis: 15%;
+            border: 2px ;dashed yellow;
+            font-size: 30;
+            font-weight: bold;
+            box-sizing: border-box;
+          }
+          #IBCTextSubtitle {
+            flex-basis: 10%;
+            border: 2px ;dashed yellow;
+            font-style: italic;
+            box-sizing: border-box;
+          }
+          #IBCTextBody {
+            flex-basis: 75%;
+            border: 2px ;dotted pink;
+            line-height: 1.6;
+            margin-top: -1.5em;
+            box-sizing: border-box;
+          }
+#entry4Div {
+  height: 20%;
+  border: 2px ;dashed green;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+          }
+
+            #LYBLogo {
+              border: 2px; solid red;
+              display: flex;
+              flex-basis: 25%;
+              align-items: center;
+              justify-content: center;
+              box-sizing: border-box;
+          }
+                #LYBimg {
+                  vertical-align: middle;
+                  border: 1px solid rgb(221 221 221);
+                  padding: 5px;
+                  border-radius: 50%;
+                  width: 12em;
+                  height: 12em;
+                  box-sizing: border-box;
+                }
+
+                              #LYBimg:hover {
+                                border: 4px solid lightgray;
+                              }
+          #LYBText {
+            border: 2px ;solid black;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 75%;
+            font-family: "Tahoma";
+            color: white;
+            box-sizing: border-box;
+
+          }
+                #LYBTextTitle {
+                  flex-basis: 15%;
+                  border: 2px ;dashed yellow;
+                  font-size: 30;
+                  font-weight: bold;
+                  box-sizing: border-box;
+                }
+                #LYBTextSubtitle {
+                  flex-basis: 10%;
+                  border: 2px ;dashed yellow;
+                  font-style: italic;
+                  box-sizing: border-box;
+                }
+                #LYBTextBody {
+                  flex-basis: 75%;
+                  border: 2px ;dotted pink;
+                  line-height: 1.6;
+                  margin-top: -1.5em;
+                  box-sizing: border-box;
+                }
+  #entry5Div {
+    height: 20%;
+    border: ;2px dashed green;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+            }
+
+            #CATLogo {
+              border: 2px ;solid red;
+              display: flex;
+              flex-basis: 25%;
+              align-items: center;
+              justify-content: center;
+              box-sizing: border-box;
+          }
+                #CATimg {
+                  vertical-align: middle;
+                  border: 1px solid rgb(221 221 221);
+                  padding: 5px;
+                  border-radius: 50%;
+                  width: 12em;
+                  height: 12em;
+                  box-sizing: border-box;
+                }
+
+                            #CATimg:hover {
+                              border: 4px solid lightgray;
+                            }
+          #CATText {
+            border: 2px ;solid black;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 75%;
+            font-family: "Tahoma";
+            color: white;
+            box-sizing: border-box;
+
+          }
+                #CATTextTitle {
+                  flex-basis: 15%;
+                  border: 2px ;dashed yellow;
+                  font-size: 30;
+                  font-weight: bold;
+                  box-sizing: border-box;
+                }
+                #CATTextSubtitle {
+                  flex-basis: 10%;
+                  border: 2px ;dashed yellow;
+                  font-style: italic;
+                  box-sizing: border-box;
+                }
+                #CATTextBody {
+                  flex-basis: 75%;
+                  border: 2px ;dotted pink;
+                  line-height: 1.6;
+                  margin-top: -1.5em;
+                  box-sizing: border-box;
+                }
+
+a:link {color: : white;} /*Self-explanatory activations of links*/
+a:visited {color: white;}
+a:hover {color: white;}
+a:active {color: white;}
+a:link {text-decoration: none
