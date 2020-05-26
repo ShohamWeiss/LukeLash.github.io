@@ -46,6 +46,18 @@
         padding: 18px 20px;
         font-size: 15px;
         }
+              #pageBannerCoverPageButton:hover {
+                background-color: rgba(232 74 39);
+              }
+              #pageBannerResumeButton:hover {
+                background-color: rgba(232 74 39);
+              }
+              #pageBannerCompleteCVButton:hover {
+                background-color: rgba(232 74 39);
+              }
+              #pageBannerContactMeButton:hover {
+                background-color: rgba(232 74 39);
+              }
 
         #downloadCV {  /*The button (which only shows up on the navigation bar on the Complete CV page) which allows the user to view pdf of my resume*/
           float: right;
