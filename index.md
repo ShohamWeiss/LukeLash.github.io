@@ -13,10 +13,10 @@ This page is mostly designed to be visually aesthetic, with meaningful personal 
 <body class="coverPageBackground">
 
   <div class="pageBanner"><!--Navigation bar at top of all pages-->
-    <a href="index.html">About Lucas</a> <!--Links to Cover Page-->
-    <a href="index_website_resume.html">Resume</a> <!--Links to Resume page-->
-    <a href="index_website_completeCV.html">Complete CV</a> <!--Links to Complete CV page-->
-    <a href="index_website_contactme.html">Contact Lucas</a> <!--Links to Contact page-->
+    <a id="pageBannerCoverPageButton" href="index.html">About Lucas</a> <!--Links to About Lucas page-->
+    <a id="pageBannerResumeButton" href="index_website_resume.html">Resume</a> <!--Links to Resume page-->
+    <a id="pageBannerCompleteCVButton" href="index_website_completeCV.html">Complete CV</a> <!--Links to Complete CV page-->
+    <a id="pageBannerContactMeButton" href="index_website_contactme.html">Contact Lucas</a> <!--Links to Contact page-->
   </div>  <!--Close pageBanner div-->
 
   <div id="coverPageBioDiv1"> <!--Div containing the large title on the right side of page-->
