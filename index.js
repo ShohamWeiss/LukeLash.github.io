@@ -3,7 +3,8 @@ window.onload = () => {
   var isMobile = /iPhone|Android/i.test(navigator.userAgent);
     if (isMobile) {
       var element = document.getElementById('mobileDiv');
-      element.style.opacity = "0.0";
+      document.getElementById("mobileDiv").style.pointerEvents = "all";
+      element.style.opacity = "1";
       element.style.filter  = 'alpha(opacity=90)'; // IE fallback
     }
 
