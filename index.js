@@ -1,5 +1,10 @@
 window.onload = () => {
 
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.open('https://www.linkedin.com/in/lucas-lasher-21011914a/');
+    }
+  
 // On Campus Button
   document.getElementById('Button1').addEventListener('click', function() {location.href = 'index.html'}, false);
 
