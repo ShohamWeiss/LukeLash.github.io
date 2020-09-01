@@ -9,12 +9,7 @@
 }
 
 #message {
-  position: fixed;
-  bottom: 15vh;
-  left: 20vw;
-
-  height: 20vh;
-  width: 20vw;
+  font-size: 36pt;
 
   font-family: sans-serif;
 }
