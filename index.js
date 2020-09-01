@@ -1,9 +1,10 @@
 window.onload = () => {
 
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var isMobile = /iPhone|Android/i.test(navigator.userAgent);
     if (isMobile) {
-      window.open('','_self').close();
-      window.open('oops.html');
+      var element = document.getElementById('mobileDiv');
+      element.style.opacity = "0.0";
+      element.style.filter  = 'alpha(opacity=90)'; // IE fallback
     }
 
 // On Campus Button
