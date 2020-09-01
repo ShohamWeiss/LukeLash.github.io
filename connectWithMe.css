@@ -1,0 +1,236 @@
+#ConnectWithMeBackground {
+  background-color: rgba(230,230,230);
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+/*
+#saber{
+  position: fixed;
+  width: 6.8vw;
+  height: 1vw;
+  top:1.8%;
+  left: 20%;
+  background-color: white;
+  border: 30px solid rgba(212,0,255);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition-duration: .5s;
+}
+#saber:hover {
+  transition-duration: 2s;
+  width: 40vw;
+}
+#hilt {
+  position: fixed;
+  width: 10vw;
+  height: 4vw;
+  top: 1.8%;
+  left: 20%;
+  border: 2px solid DarkGray;
+  background-color: DimGray;
+  pointer-events: none;
+}
+*/
+#cardDiv {
+  position: fixed;
+  top: 11.25vh;
+  margin:auto;
+  width: 105vh;
+  height: 60vh;
+  box-shadow: 0px 0px 8px 8px DarkGray;
+  display: flex;
+  flex-direction: column;
+}
+
+#cardTopBorderDiv {
+  flex-basis: 0.25vh;
+  background-image: linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
+}
+
+#cardContentDiv {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 92.5%;
+  background-color: Black;
+
+}
+
+#cardContentDivLeft {
+  flex-basis: 45%;
+  border-left: 0.25vh solid #12c2e9;
+  display: flex;
+  overflow: hidden;
+}
+
+#icon {
+  position: relative;
+  left: 20%;
+  top: 20%;
+  width: 16vw;
+  height: 16vw;
+  font-size: 13vw;
+  /*font-weight: bold;
+  color: White;
+  background-image:linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
+  border-radius: 50%;*/
+  background:-moz-linear-gradient(right, #12c2e9 0%,#c471ed 50%,#f64f59 100%);
+  background: -webkit-linear-gradient(right, #12c2e9 0%,#c471ed 50%,#f64f59 100%);
+  background: linear-gradient(to right, #12c2e9 0%,#c471ed 50%,#f64f59 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+}
+    #icon:hover {
+      opacity: .7;
+      transform: scale(1.1,1.1);
+      cursor: pointer;
+      transition-duration: .6s;
+    }
+
+#iconClick {
+  color: #c471ed;
+}
+
+#cardContentDivRight {
+  flex-basis: 55%;
+  color: rgba(230,230,230);
+  font-size: 1.5vw;
+  font-family: "Tahoma";
+  border-right: 0.25vh solid #f64f59;
+}
+
+#LUCASLASHER {
+  color: #f64f59;
+}
+
+#LLASHER2atILLINOISdotEDU {
+  color: #12c2e9;
+}
+
+#cardColorDiv {
+  flex-basis: 7.5%;
+  background-image: linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
+}
+
+
+#viewResume {
+  position: fixed;
+  top: 11.25vh;
+  margin:auto;
+  width: 105vh;
+  height: 60vh;
+
+}
+
+
+
+
+
+
+
+#indexBottomButtons { /* The sidebar containing work, campus experience and contacts */
+  width: 100vw;
+  height: 17.5vh;
+  position: fixed;
+  bottom: 0%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+
+
+#Button1 { /* On Campus */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-size: 1.5vw;
+  background-color: GhostWhite;
+  position: relative;
+  outline: none;
+
+}
+    #Button1:hover {
+      animation: tilty 3s /*infinite*/ ;
+      transition-duration: .3s;
+      background-image: linear-gradient(to right,#12c2e9,rgba(108,153,235));
+      color: White;
+      border: none;
+      box-shadow: 0px -3px 2px 0px GhostWhite;
+      overflow: visible;
+      cursor: pointer;
+    }
+/*
+  @keyframes tilty {
+    0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+
+  }
+*/
+#Button2 { /* In Industry */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-family: sans-serif;
+  font-size: 1.5vw;
+  background-color: GhostWhite;
+  position: relative;
+  overflow: visible;
+  outline: none;
+  cursor: pointer;
+
+}
+      #Button2:hover {
+        transition-duration: .3s;
+        background-image: linear-gradient(to right,rgba(108,153,235),rgba(196,113,237));
+        color: White;
+        border: none;
+        box-shadow: 0px -3px 2px 0px GhostWhite;
+        overflow: visible;
+      }
+
+#Button3 { /* CAD Portfolio */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-size: 1.5vw;
+  background-color: GhostWhite;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+      #Button3:hover {
+        transition-duration: .3s;
+        background-image: linear-gradient(to right,rgba(196,113,237),rgba(221,96,162));
+        color: White;
+        border: none;
+        box-shadow: 0px -3px 2px 0px GhostWhite;
+      }
+
+#Button4 { /* LinkedIn */
+  flex-basis: 25%;
+  border: 1px solid GhostWhite;
+  color: Gray;
+  font-size: 1.5vw;
+  background-color: GhostWhite;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+      #Button4:hover {
+        transition-duration: .3s;
+        background-image: linear-gradient(to right,rgba(221,96,162),rgba(246,79,90));
+        color: White;
+        border: none;
+        box-shadow: 0px -3px 2px 0px GhostWhite;
+      }
