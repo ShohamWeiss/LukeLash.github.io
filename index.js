@@ -2,6 +2,8 @@ window.onload = () => {
 
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
+      window.open('index.html');
+      window.close('index.html');
       window.open('oops.html');
     }
 
