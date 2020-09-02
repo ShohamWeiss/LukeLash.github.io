@@ -7,6 +7,16 @@ window.onload = () => {
       element.style.opacity = "1";
       element.style.filter  = 'alpha(opacity=90)'; // IE fallback
     }
+  
+  function noScroll() {
+  window.scrollTo(0, 0);
+}
+
+// add listener to disable scroll
+window.addEventListener('scroll', noScroll);
+
+// Remove listener to re-enable scroll
+window.removeEventListener('scroll', noScroll);
 
 // On Campus Button
   document.getElementById('Button1').addEventListener('click', function() {location.href = 'index.html'}, false);
