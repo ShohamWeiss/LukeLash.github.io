@@ -46,7 +46,7 @@
 
 #cardTopBorderDiv {
   flex-basis: 0.25vh;
-  background-image: linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
+  background-image: linear-gradient(to right,rgba(190,85,4),dimgray);
 }
 
 #cardContentDiv {
@@ -59,7 +59,7 @@
 
 #cardContentDivLeft {
   flex-basis: 45%;
-  border-left: 0.25vh solid #12c2e9;
+  border-left: 0.25vh solid rgba(190,85,4);
   display: flex;
   overflow: hidden;
 }
@@ -74,10 +74,13 @@
   /*font-weight: bold;
   color: White;
   background-image:linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
-  border-radius: 50%;*/
-  background:-moz-linear-gradient(right, #12c2e9 0%,#c471ed 50%,#f64f59 100%);
-  background: -webkit-linear-gradient(right, #12c2e9 0%,#c471ed 50%,#f64f59 100%);
-  background: linear-gradient(to right, #12c2e9 0%,#c471ed 50%,#f64f59 100%);
+  border-radius: 50%;
+  background:-moz-linear-gradient(right, #12c2e9 0%,#c471ed 50%);
+  background: -webkit-linear-gradient(right, #12c2e9 0%,#c471ed 50%);
+  background: linear-gradient(to right, #12c2e9 0%,#c471ed 50%);*/
+  background:-moz-linear-gradient(top right, rgba(190,85,4),dimgray 90%);
+  background: -webkit-linear-gradient(top right,rgba(190,85,4),dimgray 90%);
+  background: linear-gradient(to top right, rgba(190,85,4),dimgray 90%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -91,7 +94,7 @@
     }
 
 #iconClick {
-  color: #c471ed;
+  color: rgba(190,85,4);
 }
 
 #cardContentDivRight {
@@ -99,20 +102,20 @@
   color: rgba(230,230,230);
   font-size: 1.5vw;
   font-family: "Tahoma";
-  border-right: 0.25vh solid #f64f59;
+  border-right: 0.25vh solid dimgray;
 }
 
 #LUCASLASHER {
-  color: #f64f59;
+  color: rgba(190,85,4);
 }
 
 #LLASHER2atILLINOISdotEDU {
-  color: #12c2e9;
+  color: rgba(190,85,4);
 }
 
 #cardColorDiv {
   flex-basis: 7.5%;
-  background-image: linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
+  background-image: linear-gradient(to right,rgba(190,85,4),dimgray);
 }
 
 
@@ -158,7 +161,7 @@
     #Button1:hover {
       animation: tilty 3s /*infinite*/ ;
       transition-duration: .3s;
-      background-image: linear-gradient(to right,#12c2e9,rgba(108,153,235));
+      background-image: linear-gradient(to right,rgba(190,85,4),rgba(169,90,29));
       color: White;
       border: none;
       box-shadow: 0px -3px 2px 0px GhostWhite;
@@ -191,7 +194,7 @@
 }
       #Button2:hover {
         transition-duration: .3s;
-        background-image: linear-gradient(to right,rgba(108,153,235),rgba(196,113,237));
+        background-image: linear-gradient(to right,rgba(169,90,29),rgba(148,95,54));
         color: White;
         border: none;
         box-shadow: 0px -3px 2px 0px GhostWhite;
@@ -210,7 +213,7 @@
 }
       #Button3:hover {
         transition-duration: .3s;
-        background-image: linear-gradient(to right,rgba(196,113,237),rgba(221,96,162));
+        background-image: linear-gradient(to right,rgba(148,95,54),rgba(127,100,80));
         color: White;
         border: none;
         box-shadow: 0px -3px 2px 0px GhostWhite;
@@ -229,7 +232,7 @@
 
       #Button4:hover {
         transition-duration: .3s;
-        background-image: linear-gradient(to right,rgba(221,96,162),rgba(246,79,90));
+        background-image: linear-gradient(to right,rgba(127,100,80),dimgray);
         color: White;
         border: none;
         box-shadow: 0px -3px 2px 0px GhostWhite;

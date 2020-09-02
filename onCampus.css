@@ -36,18 +36,21 @@
 #leftSideBanner {
   position: relative;
   width: 100%;
-  top: .9%;;
+  top: 0%;;
   right: 0%;
   background-color: #13294b;
   color: GhostWhite;
-  font-size: 3vw;
+  font-size: 2.3vw;
+  font-family: "Ebrima";
   display: flex;
   flex-direction: column;
+  padding-top: .5vh;
+  padding-bottom: 1.3vh; /*Make sure that padding-bottom is always .8vh greater than padding-top*/
 }
 
 #containerL {
   align-self: center;
-}
+  }
 #row1L {
   position: relative;
   flex-basis: auto;
@@ -181,25 +184,19 @@
   overflow-x: hidden;
 }
 
-#spacerBarRight{
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 1%;
-  background-color: #13294b;
-}
-
 #rightSideBanner {
   position: relative;
   width: 100%;
-  top: 0.9%;
+  top: 0%;
   right: 0%;
   background-color: #13294b;
   color: GhostWhite;
-  font-size: 3vw;
+  font-size: 2.3vw;
+  font-family: "Ebrima";
   display: flex;
   flex-direction: column;
+  padding-top: .5vh;
+  padding-bottom: 1.3vh; /*Make sure that padding-bottom is always .8vh greater than padding-top*/
 }
 #containerR {
   align-self: center;

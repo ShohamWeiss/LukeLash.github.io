@@ -4,11 +4,12 @@
   left: 0%;
   height: 100%;
   width: 100%;
-  /*background-color: black;*/
   z-index: 100;
   opacity: 0;
   text-align: center;
+  font-size: 28pt;
   pointer-events: none;
+  background-color: white;
 }
 #indexBackground {
   max-width: 100%;
@@ -42,35 +43,40 @@
 
 #textDiv {
   width: 60vw;
-  height: 60vh;
+  height: fit-content;
   position: fixed;
   left: 5vw;
   top: 5vw;
   border-radius: 20px;
   background-color: #393E46;
-  font-family: sans-serif;
+  font-family: "Ebrima";
   display: flex;
   flex-direction: column;
   /* text-align: center; */
 }
 
 #meetLucas {
-  flex-basis: 50%;
   background-color: #393E46;
-  font-family: "Trebuchet MS";
+  font-family: "Ebrima";
   color: #00ADB5;
   font-size: 2vw;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  line-height:normal;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 #justIm {
   font-size: 70pt;
 }
-
+#atThe {
+  color: gainsboro;
+}
 #justLucasLasher {
-  color: White;
+  color: gainsboro;
   font-size: 70pt;
-  font-family: "Trebuchet MS";
+  font-family: "Ebrima";
 }
 
 #imagesAndRoles {
@@ -78,28 +84,33 @@
   display: flex;
   flex-direction: row;
   background-color: white/*#393E46*/;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   text-align: center;
   font-size: 3vh;
-  font-family: "Trebuchet MS";
+  font-family: sans-serif;
 }
 
 #columnA {
   flex-basis: 33.33%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #rowA1 {
   flex-basis: 75%;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
 }
-#icon1,#icon2,#icon3 {
-  font-size: 7vw;
-  color: #00ADB5;
-}
-
 #rowA2 {
   flex-basis: 25%;
-  /*border: 1px dotted red; */;
+  padding-bottom: 2vh;
+
+}
+#icon1,#icon2,#icon3 {
+  font-size: 5vw;
+  color: #00ADB5;
 }
 
 #columnB {
@@ -107,38 +118,70 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-/*border: 1px dotted red; */
 }
-
 #rowB1 {
   flex-basis: 75%;
-  border: 1px dotted white;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
 
 }
 
 #rowB2 {
   flex-basis: 25%;
-  border: 1px dotted white;
+  padding-bottom: 2vh;
+}
+#columnC {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rowC1 {
+  flex-basis: 75%;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+}
+
+#rowC2 {
+  flex-basis: 25%;
+  padding-bottom: 2vh;
+
+}
+/*
+#columnB {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rowB1 {
+  flex-basis: 75%;
+  border: 1px solid red;
+}
+
+#rowB2 {
+  flex-basis: 25%;
+  border: 1px solid red;
 }
 
 #columnC {
   flex-basis: 33.33%;
   display: flex;
   flex-direction: column;
-  /*border: 1px dotted red; */
+  align-items: center;
 }
 
 #rowC1 {
   flex-basis: 75%;
-  border: 1px dotted white;
-
+  border: 1px solid red;
 }
 
 #rowC2 {
   flex-basis: 25%;
-  border: 1px dotted white;
+  border: 1px solid red;
 }
-
+*/
 .material-icons {
   color: #00ADB5;
   transform: scale(4.5,4.5);
