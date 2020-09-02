@@ -1,12 +1,12 @@
 window.onload = () => {
 
-  var isMobile = /iPhone|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-      var element = document.getElementById('mobileDiv');
-      document.getElementById("mobileDiv").style.pointerEvents = "all";
-      element.style.opacity = "1";
-      element.style.filter  = 'alpha(opacity=90)'; // IE fallback
-    }
+//   var isMobile = /iPhone|Android/i.test(navigator.userAgent);
+//     if (isMobile) {
+//       var element = document.getElementById('mobileDiv');
+//       document.getElementById("mobileDiv").style.pointerEvents = "all";
+//       element.style.opacity = "1";
+//       element.style.filter  = 'alpha(opacity=90)'; // IE fallback
+//     }
   
   function noScroll() {
   window.scrollTo(0, 0);
